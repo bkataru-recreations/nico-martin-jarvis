@@ -1,0 +1,71 @@
+{
+  "name": "jarvis",
+  "version": "0.1.11",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "prepare": "husky",
+    "prod": "node scripts/serverProd.mjs"
+  },
+  "keywords": [],
+  "author": "Nico Martin <mail@nico.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@headlessui/react": "^2.2.9",
+    "@heroicons/react": "^2.2.0",
+    "@huggingface/transformers": "^3.7.5",
+    "@modelcontextprotocol/sdk": "^1.19.1",
+    "@tailwindcss/vite": "^4.1.14",
+    "phonemizer": "^1.2.1",
+    "preact": "^10.27.2",
+    "preact-router": "^4.1.2",
+    "react-hot-toast": "^2.6.0",
+    "strict-url-sanitise": "^0.0.1",
+    "uuid": "^13.0.0",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "@preact/preset-vite": "^2.10.2",
+    "@tailwindcss/postcss": "^4.1.14",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@types/dom-chromium-ai": "^0.0.10",
+    "@types/node": "^24.6.2",
+    "@webgpu/types": "^0.1.65",
+    "autoprefixer": "^10.4.21",
+    "dotenv": "^17.2.3",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^6.1.0",
+    "eslint-plugin-react-refresh": "^0.4.23",
+    "globals": "^16.4.0",
+    "husky": "^9.1.7",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.45.0",
+    "vite": "^7.1.9",
+    "vite-plugin-html-config": "^2.0.2"
+  },
+  "prettier": {
+    "plugins": [
+      "@trivago/prettier-plugin-sort-imports",
+      "prettier-plugin-tailwindcss"
+    ],
+    "singleQuote": false,
+    "trailingComma": "es5",
+    "importOrder": [
+      "<THIRD_PARTY_MODULES>",
+      "^[./]"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
+  }
+}
